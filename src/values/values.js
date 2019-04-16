@@ -1,13 +1,13 @@
 var AUDIO_MAP = {}
-AUDIO_MAP["Q"] = "C:/Users/Manuel/Documents/ReactProjects/drum-machine/src/sounds/beep1.wav"
-AUDIO_MAP["W"] = "C:/Users/Manuel/Documents/ReactProjects/drum-machine/src/sounds/beep2.wav"
-AUDIO_MAP["E"] = "C:/Users/Manuel/Documents/ReactProjects/drum-machine/src/sounds/beep3.wav"
-AUDIO_MAP["A"] = "C:/Users/Manuel/Documents/ReactProjects/drum-machine/src/sounds/beep4.mp3"
-AUDIO_MAP["S"] = "C:/Users/Manuel/Documents/ReactProjects/drum-machine/src/sounds/beep5.mp3"
-AUDIO_MAP["D"] = "C:/Users/Manuel/Documents/ReactProjects/drum-machine/src/sounds/beep6.mp3"
-AUDIO_MAP["Z"] = "C:/Users/Manuel/Documents/ReactProjects/drum-machine/src/sounds/beep7.mp3"
-AUDIO_MAP["X"] = "C:/Users/Manuel/Documents/ReactProjects/drum-machine/src/sounds/beep8.mp3"
-AUDIO_MAP["C"] = "C:/Users/Manuel/Documents/ReactProjects/drum-machine/src/sounds/beep9.wav"
+AUDIO_MAP["Q"] = "http://127.0.0.1:8887/beep1.wav"
+AUDIO_MAP["W"] = "http://127.0.0.1:8887/beep2.wav"
+AUDIO_MAP["E"] = "http://127.0.0.1:8887/beep3.wav"
+AUDIO_MAP["A"] = "http://127.0.0.1:8887/beep4.mp3"
+AUDIO_MAP["S"] = "http://127.0.0.1:8887/beep5.mp3"
+AUDIO_MAP["D"] = "http://127.0.0.1:8887/beep6.mp3"
+AUDIO_MAP["Z"] = "http://127.0.0.1:8887/beep7.mp3"
+AUDIO_MAP["X"] = "http://127.0.0.1:8887/beep8.mp3"
+AUDIO_MAP["C"] = "http://127.0.0.1:8887/beep9.wav"
 
 var AUDIO_DESCRIPTION = {}
 AUDIO_DESCRIPTION["Q"] = "beep 1"
