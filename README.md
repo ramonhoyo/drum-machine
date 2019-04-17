@@ -1,6 +1,6 @@
 
 ## DRUM MACHINE APP
-this project is part of freecodecamp projects
+this project is part of freecodecamp projects challenges
 
 https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-drum-machine/
 
