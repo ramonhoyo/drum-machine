@@ -4,40 +4,34 @@ this project is part of freecodecamp projects
 
 https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/build-a-drum-machine/
 
-##Steps to run
+### Steps to run
 
-1- for provide local audio is necesary 
+#### 1- for provide local audio is necesary 
     ##Web Server for Chrome extension 
     https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/related
 
-2- setup Web Server and choice folder, and paste all sounds under src/sounds path to selected folder.
+#### 2- setup Web Server and choice folder, and paste all sounds under src/sounds path to selected folder.
 
-3- run npm start
+#### 3- run npm start
 
 
-##tegnologies
-in this project was used:
-    ReactJs
-    react-redux
+### tegnologies
+## ReactJS
+    * components
+    * props
+    * FLUX    
 
-react-redux was incorparated to show demostration of concepts
+## Redux
+    * stores
+    * actions
+    * actions creators
+    * reducers
 
-ReactJS
-    -components
-    -props
-    -FLUX    
-
-Redux
-    -stores
-    -actions
-    -actions creators
-    -reducers
-
-React-Redux
+## React-Redux
     -Provider
     -connect
     -handling redux store
     -connecting states properties to components props
     -connecting actions creators and dispatchers to components props
     
-material-ui 
+## material-ui 
