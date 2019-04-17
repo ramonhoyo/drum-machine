@@ -15,23 +15,23 @@ https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/
 #### 3- run npm start
 
 
-### tegnologies
-## ReactJS
+## tegnologies
+### ReactJS
     * components
     * props
     * FLUX    
 
-## Redux
+### Redux
     * stores
     * actions
     * actions creators
     * reducers
 
-## React-Redux
+### React-Redux
     -Provider
     -connect
     -handling redux store
     -connecting states properties to components props
     -connecting actions creators and dispatchers to components props
     
-## material-ui 
+### material-ui 
