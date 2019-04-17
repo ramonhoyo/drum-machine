@@ -1,5 +1,5 @@
 var AUDIO_MAP = {}
-AUDIO_MAP["Q"] = "http://127.0.0.1:8887/beep1.wav"
+AUDIO_MAP["Q"] = "http://127.0.0.1:8887/beep2.wav"
 AUDIO_MAP["W"] = "http://127.0.0.1:8887/beep2.wav"
 AUDIO_MAP["E"] = "http://127.0.0.1:8887/beep3.wav"
 AUDIO_MAP["A"] = "http://127.0.0.1:8887/beep4.mp3"

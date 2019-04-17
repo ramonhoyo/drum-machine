@@ -12,12 +12,15 @@ class Pad extends Component {
         this.props.onPlay(this.props.character)
     }
 
+    
+
     render(){
         return(
             <div 
                 id={this.props.character+"-pad"} 
-                className="ripplelink drum-pad" 
-                onClick={this.handleClick} style={divStyle}
+                className="ripplelink drum-pad"
+                onClick={this.handleClick} 
+                style={this.props.isOn? divStyle: divStyleDisabled}
             >
                 <h1 style={h1Style}>{this.props.character}</h1>
                 <audio 
@@ -31,6 +34,19 @@ class Pad extends Component {
 
 const divStyle = {
     backgroundColor : '#d81b60',
+    height: 100,
+    width: 100,
+    margin: 10,
+    textAlign: 'center',
+    borderRadius: 5,
+    color: '#fff',
+    cursor: 'pointer',
+}
+
+
+
+const divStyleDisabled = {
+    backgroundColor : '#b0003a',
     height: 100,
     width: 100,
     margin: 10,

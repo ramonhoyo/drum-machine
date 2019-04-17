@@ -8,15 +8,15 @@ class Container extends Component {
         return(
             <Paper style={paperStyle}>
                 <div id="display_" style={divStyle} tabIndex="0">
-                        <Pad character="Q"  onPlay={this.props.onPlay}></Pad>
-                        <Pad character="W"  onPlay={this.props.onPlay}></Pad>
-                        <Pad character="E"  onPlay={this.props.onPlay}></Pad>
-                        <Pad character="A"  onPlay={this.props.onPlay}></Pad>
-                        <Pad character="S"  onPlay={this.props.onPlay}></Pad>
-                        <Pad character="D"  onPlay={this.props.onPlay}></Pad>
-                        <Pad character="Z"  onPlay={this.props.onPlay}></Pad>
-                        <Pad character="X"  onPlay={this.props.onPlay}></Pad>
-                        <Pad character="C"  onPlay={this.props.onPlay}></Pad>                    
+                        <Pad character="Q"  isOn={this.props.isOn} onPlay={this.props.onPlay}></Pad>
+                        <Pad character="W"  isOn={this.props.isOn} onPlay={this.props.onPlay}></Pad>
+                        <Pad character="E"  isOn={this.props.isOn} onPlay={this.props.onPlay}></Pad>
+                        <Pad character="A"  isOn={this.props.isOn} onPlay={this.props.onPlay}></Pad>
+                        <Pad character="S"  isOn={this.props.isOn} onPlay={this.props.onPlay}></Pad>
+                        <Pad character="D"  isOn={this.props.isOn} onPlay={this.props.onPlay}></Pad>
+                        <Pad character="Z"  isOn={this.props.isOn} onPlay={this.props.onPlay}></Pad>
+                        <Pad character="X"  isOn={this.props.isOn} onPlay={this.props.onPlay}></Pad>
+                        <Pad character="C"  isOn={this.props.isOn} onPlay={this.props.onPlay}></Pad>                    
                 </div>
             </Paper>
            
@@ -36,8 +36,7 @@ const paperStyle = {
     height: 360,
     display: "inline-block",
     float: "left",
-    margin: 20,
-    
+    margin: 20,    
 }
 
 export default Container;

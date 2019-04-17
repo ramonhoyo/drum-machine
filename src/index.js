@@ -5,9 +5,34 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import { connect, Provider } from "react-redux";
-import  store  from './data/store'
+import { store } from './data/store'
+import { volumeChangeCreator , lastKeyPressed, powerChange} from "./data/actionsCreator";
 
-let AppConnected = connect(null, null)(App)
+const mapsStateToProps = (state) => {
+  return  {
+    volume: state.volume,
+    last: state.lastKeyPressed,
+    isOn: state.isOn
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    changeVolume : function(value) {
+      dispatch(volumeChangeCreator(value))
+    },
+    setLast: function(last){
+      dispatch(lastKeyPressed(last))
+    },
+    changePower: function(value){
+      dispatch(powerChange(value))
+    }
+  }
+}
+
+
+let AppConnected = connect(mapsStateToProps, mapDispatchToProps)(App)
+
 
 
 ReactDOM.render(

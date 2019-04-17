@@ -17,6 +17,9 @@ const theme = createMuiTheme({
 })
 
 class Panel extends Component {
+    constructor(props){
+        super(props)
+    }
     render(){
         return (
             <Paper style={mainStyle}>
@@ -27,7 +30,10 @@ class Panel extends Component {
                         <Typography style={{textAlign: "left", marginLeft: 10, marginTop: 20}}>Drum machine</Typography>
                         </div>
                         <div style={itemRightStyle}>
-                            <Switch></Switch>
+                            <Switch 
+                                onChange={this.props.changePower}
+                                checked={this.props.isOn}
+                            />
                         </div>
                     </div>
 
@@ -40,6 +46,7 @@ class Panel extends Component {
                                     max={100}
                                     value={this.props.value}
                                     onChange={this.props.handleChange}
+                                    disabled={!this.props.isOn}
                                 />
                             </MuiThemeProvider>
                         

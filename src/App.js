@@ -4,16 +4,12 @@ import  Container  from './components/Container'
 import Panel from './components/Panel';
 import { AUDIO_DESCRIPTION } from './values/values'
 
-
 class App extends Component {
   constructor(props){
     super(props)
-    this.state = {
-      volume : 0.5,
-      last: '',
-    }
     this.handlePlay = this.handlePlay.bind(this)
     this.audio = new Audio()
+    this.handlePowerChange = this.handlePowerChange.bind(this)
   }
 
   onKeyPressed(event){ 
@@ -26,20 +22,25 @@ class App extends Component {
 
   handlePlay(audioId){
     try{ 
+      if(!this.props.isOn){
+        return
+      }
       const sound = document.getElementById(audioId)
       sound.currentTime = 0
-      sound.volume = this.state.volume
+      sound.volume = this.props.volume
       sound.play()
-      this.setState({
-        last: AUDIO_DESCRIPTION[audioId]
-      })
+      this.props.setLast(AUDIO_DESCRIPTION[audioId])
     } catch(err){
       console.log(err)
     }  
   }
 
+  handlePowerChange(event, val){
+    this.props.changePower(val)
+  }
+
   handleChange = (event, val) => {
-    this.setState({ volume: val/100 });
+    this.props.changeVolume(val/100);
   };
 
   componentWillMount(){
@@ -52,10 +53,20 @@ class App extends Component {
 
   render() {
     return (
-      <div id="drum-machine" className="App" style={appStyle}>
-          <Container volume={this.state.volume} onPlay={this.handlePlay}/>
-          <Panel handleChange={this.handleChange} value={this.state.volume*100} last={this.state.last}/>
-      </div>
+        <div id="drum-machine" className="App" style={appStyle}>
+            <Container 
+              volume={this.props.volume} 
+              onPlay={this.handlePlay}
+              isOn={this.props.isOn}
+            />
+            <Panel 
+              handleChange={this.handleChange} 
+              value={this.props.volume*100} 
+              changePower={this.handlePowerChange}
+              last={this.props.last}
+              isOn={this.props.isOn}  
+            />
+        </div>  
     );
   }
 }

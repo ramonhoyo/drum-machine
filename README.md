@@ -15,3 +15,29 @@ https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/
 3- run npm start
 
 
+##tegnologies
+in this project was used:
+    ReactJs
+    react-redux
+
+react-redux was incorparated to show demostration of concepts
+
+ReactJS
+    -components
+    -props
+    -FLUX    
+
+Redux
+    -stores
+    -actions
+    -actions creators
+    -reducers
+
+React-Redux
+    -Provider
+    -connect
+    -handling redux store
+    -connecting states properties to components props
+    -connecting actions creators and dispatchers to components props
+    
+material-ui 
