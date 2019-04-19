@@ -35,3 +35,6 @@ https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/
     -connecting actions creators and dispatchers to components props
     
 ### material-ui 
+
+## Preview
+    [!drum-machine-preview](src/images/Captura.PNG)
