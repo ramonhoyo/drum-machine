@@ -37,4 +37,4 @@ https://learn.freecodecamp.org/front-end-libraries/front-end-libraries-projects/
 ### material-ui 
 
 ## Preview
-[drum-machine-preview](src/images/Captura.PNG)
+![drum-machine-preview](src/images/Captura.PNG)
